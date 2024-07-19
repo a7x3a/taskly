@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "https://tasklly.vercel.app",
+    origin: "https://tasklly.vercel.app/",
     credentials: true,
   })
 );
@@ -32,7 +32,7 @@ app.use(
     secret: "AABBCCDDEE",
     resave: false,
     saveUninitialized: false,
-    cookie: { secure: false , maxAge : 21600000 /*6h*/ },
+    cookie: { secure: true , maxAge : 21600000 /*6h*/ },
   })
 );
 
