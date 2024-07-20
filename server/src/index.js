@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "https://tasklly.vercel.app",
+    origin: "*",
     credentials: true,
   })
 );
