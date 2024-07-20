@@ -32,13 +32,14 @@ app.use(
     secret: "AABBCCDDEE",
     resave: false,
     saveUninitialized: false,
-    cookie: { secure: false , maxAge : 21600000 /*6h*/ },
+    cookie: { secure: true , maxAge : 21600000 /*6h*/ },
   })
 );
 
 //Creating Auth Routes
 app.use("/auth", authRoute);
 app.use((request, response, next) => {
+  console.log(request.session.user);
   if (request.session.user) {
     next();
   } else {
