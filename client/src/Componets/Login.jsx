@@ -90,9 +90,9 @@ const Login = () => {
       const response = await axios.put(
         verify_otp_url,
         {
-          email,
-          newPassword,
-          otp,
+            email,
+            newPassword,
+            otp,
         },
         {
           headers: {
@@ -122,8 +122,8 @@ const Login = () => {
       const response = await axios.post(
         url,
         {
-          email,
-          password,
+            email,
+            password,
         },
         {
           headers: {

@@ -13,11 +13,12 @@ function Footer() {
       className="w-full h-[70px] flex gap-5 justify-between px-7 items-center mt-3  rounded-xl text-center"
     >
       <div className="flex justify-center items-center gap-1 font-mono font-bold  opacity-70">
-        <MdEmail size={25} />
-
+        <a href="mailto:taskly.dev@outlook.com">
+          <MdEmail size={25} />
+        </a>
         <a
           href="mailto:taskly.dev@outlook.com"
-          className="text-sm hover:opacity-50  transition duration-300 font-light tracking-wide"
+          className="text-sm  hidden sm:block hover:opacity-50  transition duration-300 font-light tracking-wide"
         >
           taskly.dev@outlook.com
         </a>

@@ -16,18 +16,18 @@ const Navbar = () => {
   return (
     <div
       data-theme={state.mode}
-      className={`navbar bg-base-100 rounded-xl z-50 sm:px-5 sm:p-3 p-5 `}
+      className={`navbar bg-base-100 rounded-xl z-50 sm:px-5 sm:p-3 p-5  `}
     >
       <div className="flex-1">
         <Link
           to={"/"}
-          className="btn btn-ghost sm:text-xl opacity-80 text-2xl font-bold font-mono tracking-widest uppercase"
+          className="btn btn-ghost sm:text-xl opacity-80 text-lg font-bold font-mono tracking-widest uppercase"
         >
           Taskly
         </Link>
       </div>
       <label
-        className={`swap opacity-80 scale-90 px-5 swap-rotate ${
+        className={`swap opacity-80 scale-90 sm:px-5 px-2 swap-rotate ${
           state.mode === "dark" ? "text-blue-200" : null
         }`}
       >
@@ -63,9 +63,9 @@ const Navbar = () => {
           <div
             tabIndex={0}
             role="button"
-            className="btn btn-ghost btn-circle sm:scale-105 scale-150 avatar"
+            className="btn btn-ghost  btn-circle sm:scale-105 scale-125  avatar"
           >
-            <div className="w-10 rounded-full">
+            <div className="sm:w-10 w-8 rounded-full">
               <img
                 alt="Tailwind CSS Navbar component"
                 src="https://img.icons8.com/?size=100&id=kDoeg22e5jUY&format=png&color=000000"
