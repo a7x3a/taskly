@@ -32,7 +32,7 @@ app.use(
     secret: "AABBCCDDEE",
     resave: false,
     saveUninitialized: false,
-    cookie: { secure: true , maxAge : 21600000 /*6h*/ },
+    cookie: { secure: false , maxAge : 21600000 /*6h*/ },
   })
 );
 
