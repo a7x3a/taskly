@@ -31,6 +31,7 @@ app.use(
     }),
     secret: "AABBCCDDEE",
     resave: false,
+    httpOnly: true,
     saveUninitialized: false,
     cookie: { secure: true , maxAge : 21600000 /*6h*/ },
   })
