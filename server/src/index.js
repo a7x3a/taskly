@@ -42,7 +42,6 @@ app.use(
 //Creating Auth Routes
 app.use("/auth", authRoute);
 app.use((request, response, next) => {
-  console.log(request.session.user);
   if (request.session.user) {
     next();
   } else {
