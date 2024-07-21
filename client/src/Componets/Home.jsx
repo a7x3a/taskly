@@ -366,7 +366,7 @@ const Home = () => {
 
       {loader ? (
         <div className="w-full h-[100px] flex justify-center items-center">
-          <l-dot-stream size="100" speed="2.5" color="gray"></l-dot-stream>
+          <l-dot-stream size="100" speed="2.5" color="black"></l-dot-stream>
         </div>
       ) : (
         <div className="max-w-full  h-fit mt-5 rounded-lg grid gap-3">
