@@ -22,6 +22,7 @@ app.use(
     credentials: true,
   })
 );
+app.set("trust proxy", 1);
 app.use(
   session({
     store: MongoStore.create({
@@ -30,6 +31,8 @@ app.use(
       collectionName: "sessions",
     }),
     secret: "AABBCCDDEE",
+    proxy:true,
+    name:"tasklyCookie",
     resave: false,
     saveUninitialized: false,
     cookie: { secure: true , maxAge : 21600000 /*6h*/,sameSite: 'none' },
