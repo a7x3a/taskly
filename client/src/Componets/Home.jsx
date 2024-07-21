@@ -321,7 +321,7 @@ const Home = () => {
             onClick={() => {
               setCategorized((prev) => !prev);
               {
-                categorized && setTasksData(oldTasksData);
+                categorized && fetchData();
               }
             }}
             className="btn btn-block "
