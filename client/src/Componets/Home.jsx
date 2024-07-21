@@ -8,8 +8,9 @@ import { IoReload } from "react-icons/io5";
 import { MdDeleteOutline } from "react-icons/md";
 import { IoMdClose } from "react-icons/io";
 import { getConfig } from "../config/config";
-import "ldrs/dotStream";
 import axios from "axios";
+import { waveform } from 'ldrs'
+waveform.register()
 const Home = () => {
   const options = {
     year: "numeric",
@@ -366,7 +367,12 @@ const Home = () => {
 
       {loader ? (
         <div className="w-full h-[100px] flex justify-center items-center">
-          <l-dot-stream size="100" speed="2.5" color="black"></l-dot-stream>
+          <l-waveform
+  size="35"
+  stroke="3.5"
+  speed="1" 
+  color="gray" 
+></l-waveform>
         </div>
       ) : (
         <div className="max-w-full  h-fit mt-5 rounded-lg grid gap-3">
