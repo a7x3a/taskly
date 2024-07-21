@@ -2,13 +2,14 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useState, useRef } from "react";
 import axios from "axios";
-import "ldrs/ring2";
 import { BiShow } from "react-icons/bi";
 import { BiHide } from "react-icons/bi";
 import Loader from "./Loader";
 import useActions from "../Context/Reducer";
 import { useStates } from "../Context/Context";
 import { getConfig } from "../config/config";
+import { ring2 } from 'ldrs'
+ring2.register()
 
 const Login = () => {
   //Statemangemnts
