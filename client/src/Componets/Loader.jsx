@@ -1,15 +1,15 @@
 import React from "react";
-import { waveform } from 'ldrs'
-waveform.register()
+import { jelly } from 'ldrs'
+jelly.register()
+
 function Loader() {
   return (
     <div className="w-full min-h-[100dvh] flex justify-center items-center">
-      <l-waveform
-  size="100"
-  stroke="3.5"
-  speed="1" 
+     <l-jelly
+  size="80"
+  speed="0.9" 
   color="gray" 
-></l-waveform> 
+></l-jelly>
     </div>
   );
 }
