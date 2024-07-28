@@ -108,7 +108,7 @@ const Signup = () => {
           <div
             className="hidden bg-cover lg:block lg:w-1/2"
             style={{
-              backgroundImage: `url(https://i.postimg.cc/yYp3Yw5k/signup.jpg)`,
+              backgroundImage: `url(https://i.postimg.cc/6qn7wXj5/signup.jpg)`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
